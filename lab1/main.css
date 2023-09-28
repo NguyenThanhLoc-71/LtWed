@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 1200px;
+    border: 3px solid black  ;
+
+
+}
+ header{
+    font-size: 30px;
+    background: gray;
+    height: 80px;
+     border: 3px solid black ;
+
+}
+ #Content{
+     height: 400px;
+    box-sizing: border-box;
+
+
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav{
+    width: 30%;
+    float: left;
+    height: 400px;
+    background: #ffdf7e ;
+    border: 2px solid black  ;
+}
+article{
+    width: 70%;
+    float: left;
+    height: 400px;
+    background: white ;
+    border: 2px solid black  ;
+}
+footer{
+    height: 30px;
+    background: gray;
+    text-align: center;
+    border: 3px solid black  ;
+}
+
