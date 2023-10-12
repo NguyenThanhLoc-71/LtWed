@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E6E6E6;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+}
+
+.form {
+    width: 550px;
+    height: 730px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form label {
+    color: #6BCD00;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.form .input {
+    background-color: #F9F9F9;
+    padding: 10px 18px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form .input input {
+    margin-left: 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #F9F9F9;
+    color: #3e3e3e;
+}
+
+.form .short {
+    width: 50%;
+    display: inline-block;
+}
+
+.form .short input {
+    width: 70%;
+}
+
+.form .input i {
+    color: #C1C1C1;
+    margin-right: 12px;
+}
+
+.form .short i {
+    margin-right: 16px;
+}
+
+.form .input .divider {
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(166, 166, 166);
+    width: 1px;
+    height: 27px;
+    top: 8px;
+}
+
+.form .left {
+    float: left;
+}
+
+.form .right {
+    float: right;
+}
+
+.form .float {
+    margin-top: 20px
+}
+
+.form .float input,button {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    background-color: #F9F9F9;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form .left input {
+    width: 70px;
+    margin-right: 7px;
+}
+
+.form .right button {
+    width: 110px;
+    text-align: start;
+    color: rgb(134, 134, 134);
+    outline: none;
+}
+
+.form .right button:hover {
+    cursor: pointer;
+}
+
+.form .detail {
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+
+.form .detail .inputs button {
+    width: 232px;
+    outline: none;
+    color: rgb(134, 134, 134);
+}
+
+.form .detail .inputs i {
+    color: #C1C1C1;
+    margin-right: 8px;
+}
+
+.form .detail .inputs button:first-child i {
+    color: white;
+}
+
+.form .detail .inputs button:first-child {
+    background-color: #7ED321;
+    color: white;
+}
+
+.form .detail .inputs button:hover {
+    cursor: pointer;
+}
+
+.form select {
+    display: inline-block;
+    background-color: #F9F9F9;
+    padding: 10.8px 18px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    width: 113px;
+    color: rgb(37, 37, 37);
+}
+
+.form .term-l {
+    margin-top: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form .term {
+    display: flex;
+}
+
+.form .term input {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.form .term span {
+    color: rgb(132, 132, 132);
+    line-height: 1.2em;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E6E6E6;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+}
+
+.form {
+    width: 550px;
+    height: 600px;
+    background-color: white;
+    padding-top: 28px;
+    border-radius: 8px;
+}
+
+.form h1 {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #312D2C;
+}
+
+.form .inputs {
+    text-align: start;
+    padding: 0 30px;
+}
+
+.form .inputs .field {
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    height: 70px;
+    padding: 10px 14px;
+    margin-top: 20px;
+    background-color: #F7F7F7;
+}
+
+.form .inputs .clearfix {
+    clear: both;
+    margin-top: 110px;
+}
+
+.form .inputs .field label {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    margin: 0;
+}
+
+.form .inputs .field input,textarea,select {
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 0;
+    border: none;
+    margin-top: 5px;
+    background-color: #F7F7F7;
+}
+
+.form .inputs .area {
+    height: 120px;
+    background-color: white;
+}
+
+.form .inputs .area textarea {
+    height: 78%;
+    background-color: white;
+}
+
+.form .inputs .field select {
+    margin-left: -4px;
+}
+
+.form .inputs .field select .placeholder {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.form .inputs button {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    border-radius: 100px;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.form .inputs button:hover {
+    cursor: pointer;
+}
+
+.form .inputs .left {
+    float: left;
+    width: 48%;
+}
+
+.form .inputs .right {
+    float: right;
+    width: 48%;
+}

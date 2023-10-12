@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: #64336a;
+    font-weight: 700;
+}
+
+.background {
+    text-align: center;
+    position: relative;
+}
+
+.background img.bg {
+    width: 95%;
+}
+
+.background form {
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 40px 50px;
+    color: #3B1545;
+}
+
+.background form h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.background form input {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: #6b3870;
+}
+
+.background form button {
+    width: 55%;
+    background-color: #BD59D7;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    box-shadow: rgba(222, 14, 250, 0.3) 0px 8px 24px;
+    margin-top: 25px;
+    padding: 11px 0;
+}
+
+.background form button:hover {
+    cursor: pointer;
+}
+
+.background form span.on-icon {
+    display: block;
+    margin-top: 40px;
+    color: #B5B5B5;
+}
+
+.background form .icons {
+    margin-top: 20px;
+}
+
+.background form .icons img {
+    display: inline-block;
+    border-radius: 100%;
+    width: 45px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.background form .icons img:hover {
+    cursor: pointer;
+}
+
+.background form .icons img:first-child {
+    margin-right: 5px;
+}
+
+.background form span:last-child {
+    color: #634168;
+    font-weight: 500;
+    position: absolute;
+    bottom: 30px;
+    left: 173px;
+}
+
+.background form span:last-child:hover {
+    cursor: pointer;
+}
