@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="heading">Contact us</h1>
+      <form class="form" id="form">
+        <div id="control1" class="form-wrap">
+          <label for="fullname">Full name *</label>
+          <input
+            type="text"
+            class="input fullname"
+            id="fullname"
+            placeholder="Enter Your Name"
+          />
+          <span class="error"></span>
+        </div>
+        <div id="control2" class="">
+          <div class="control-email form-wrap">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              class="input email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="control-password form-wrap">
+            <label for="password">Phone</label>
+            <input
+              type="tel"
+              class="input password"
+              id="phone"
+              placeholder="Format: 123-45-678"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <span class="error"></span>
+          </div>
+        </div>
+
+        <div id="control3" class="form-wrap">
+          <label for="service">Service</label>
+          <select name="service" id="service">
+            <option value="" selected disabled hidden>Please choose</option>
+
+            <option value="food">Food</option>
+            <option value="drink">Drink</option>
+            <option value="sleep">Sleep</option>
+          </select>
+          <span class="error"></span>
+        </div>
+
+        <div id="control4" class="form-wrap">
+          <label for="message">Message</label>
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Typing your message..."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <span class="error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Submit
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+
+    <script>
+      const fullname = document.getElementById("fullname");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const service = document.getElementById("service");
+      const message = document.getElementById("message");
+      const form = document.getElementById("form");
+
+      const controls = [fullname, email, phone, service, message];
+      const btn = document.getElementById("btn");
+      let hasError = true;
+
+      form.onsubmit = (e) => {
+        e.preventDefault();
+        controls.forEach((ctr) => {
+          const error = ctr.nextElementSibling;
+          if (!ctr.value) {
+            error.innerText = `${ctr.getAttribute("id")} field is required`;
+            ctr.parentElement.classList.add("errored");
+          } else if (ctr.value) {
+            error.innerText = "";
+            ctr.parentElement.classList.remove("errored");
+          } else if (ctr.isSameNode(phone)) {
+            error.innerText = `${ctr.getAttribute("id")} field is wrong format`;
+            ctr.parentElement.classList.add("errored");
+            console.log(ctr.length);
+          }
+        });
+        if (!hasError) {
+          document.body.setAttribute("class", "");
+        }
+      };
+    </script>
+  </body>
+</html>

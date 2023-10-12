@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type=" number" name="a" id="a" placeholder="nhap so a vao" />
+    <input type=" number" name="b" id="b" placeholder="nhap so a vao" />
+    <input type=" number" name="c" id="c" placeholder="nhap so a vao" />
+    <button id="button">Calculate</button>
+    <div id="res"></div>
+  </body>
+
+  <script>
+    button.onclick = () => {
+      const a = document.getElementById("a").value;
+      const b = document.getElementById("b").value;
+      const c = document.getElementById("c").value;
+      const button = document.getElementById("button");
+      const result = document.getElementById("res");
+      let str = "";
+      const delta = b * b + 4 * a * c;
+      if (a == 0) {
+        str = "phuong trinh vo nghiem";
+      } else if (delta == 0) {
+        const res = -b / a;
+        str = `Phuong trinh co mot nghiep kep la : ${res}`;
+      } else if (delta > 0) {
+        const res1 = -b - (Math.sqrt(delta) / 2) * a;
+        const res2 = -b + (Math.sqrt(delta) / 2) * a;
+        str = `Phuong trinh co hai nghiem phan biet la : x1=${res1} x2=${res2}`;
+      } else {
+        str = "Phuong trinh vo nghiem";
+      }
+
+      result.innerText = str;
+    };
+  </script>
+</html>
